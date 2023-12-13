@@ -1,0 +1,8 @@
+- WHERE
+- logical operators  (and - or - not)
+- IN, BETWEEN, LIKE
+    - IN(value1, value2) -
+    - BETWEEN column_name AND value2
+    - LIKE pattern  % one or more 
+                    _ one single character  'g__%'
+
