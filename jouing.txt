@@ -1,0 +1,35 @@
+- Alias 
+    SELECT first_name AS name from customer; 
+
+- CONCAT function
+    SELECT CONCAT(column1_name, " " ,column2_name) as name  from customers;
+
+- query multiple tables 
+    SELECT x.column_field y.column_name 
+    FROM  table_name as x , table_name as x
+
+JOINS Types : 
+- Inner Join : Extracts or selects records of data that have matching values in both tables
+- Left Join  : Extracts records of data from left table and matching records from right table 
+- Right Join : Extracts records of data from right table and matching records from left table 
+- self Join  : a table is joined with itself to retrieve info that exists in the same table
+
+
+UNION Operator
+select column1_name, column2_name
+from table_name
+UNION 
+select column1_name, column2_name
+from table_name
+
+UNION Best Practices :
+- every select statement must have the same number of column number 
+- all related columns have the same data types
+- all related columns have the same order in the select statement
+
+
+- UNION
+    return combined distinct data
+
+- UNION ALL 
+    to combine all data (duplicated data)

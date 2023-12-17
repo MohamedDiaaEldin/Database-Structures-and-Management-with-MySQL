@@ -1,0 +1,9 @@
+HAVING with ORDER BY: 
+    we can use it to filter the data that order by generate 
+
+
+SELECT column_name 
+FROM table_name 
+WHERE <condition>
+ORDER BY price
+HAVING <condition>

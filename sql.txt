@@ -1,2 +1,23 @@
 - Create Database:
         CREATE DATABASE IF NOT EXISTS Lucky_Shrub;
+
+
+ANY operator 
+The ANY operator lets you perform a comparison between a single column value and a range of other values. The range of values comes from the execution of a subquery. 
+The syntax of a statement that uses an ANY operator is as follows: 
+        SELECT column_name(s) 
+        FROM table_name 
+        WHERE column_name comparison operator ANY 
+          (SELECT column_name 
+          FROM table_name 
+          WHERE condition); 
+
+ALL operator 
+Use the ALL operator for the same purpose as the ANY operator. However, the way it works is a little bit different. 
+It returns a boolean value as a result of performing a comparison operation. It returns TRUE only if ALL subquery values meet the given condition. In other words, 
+the condition will be TRUE only if the operation is true for all values in the range. 
+The syntax for the ALL operator is as follows: 
+        SELECT column_name(s) 
+        FROM table_name 
+        WHERE column_name operator ALL 
+          (SELECT column_name FROM table_name WHERE condition); 
