@@ -1,0 +1,12 @@
+- copy an existing table's data to a new table in the same database 
+    CREATE TABLE new_table_name 
+    SELECT columns FROM existing_table_name ;
+
+- copy a table with constrains 
+    CREATE TABLE table_name LIKE existing_table_name
+
+    
+- copy existing table data to a new database 
+    CREATE TABLE database1_name.new_table_name 
+    SELECT columns FROM database2_name.existing_table_name ;
+

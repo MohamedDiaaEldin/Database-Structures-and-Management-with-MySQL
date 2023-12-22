@@ -1,0 +1,26 @@
+Key constrains : Apply role to key types 
+    Primary key 
+    Unique Key
+
+
+Domain Constrains   : Govern Values stored for a specific column
+    Limit the value range in a column 
+    CREATE TABLE Bookings (
+        booking_id INT PRIMARY KEY,
+        number_of_orders INT CHECK(number_of_orders <= 8)) ; 
+
+Referential integrity Constrains: Establish rules for referential key
+    Foreign key
+    - deleting related rows while foreign key constrain applied : 
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+
+
+ALTER Constrains : 
+    - MODIFY, ADD, DROP, CHANGE, RENAME -> deals with columns     
+    ALTER TABLE table_name MODIFY column1_name VARCHAR(100) NOT NULL, MODIFY column2_name INT NOT NULL;
+    ALTER TABLE table_name ADD column1_name VARCHAR(100) NOT NULL ;
+    ALTER TABLE table_name DROP column1_name ;
+    
+    ALTER TABLE table_name CHANGE old_column_name new_column_name VARCHAR(15);
+    ALTER TABLE old_table_name RENAME new_table_name;

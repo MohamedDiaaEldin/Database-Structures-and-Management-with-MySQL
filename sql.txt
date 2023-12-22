@@ -21,3 +21,21 @@ The syntax for the ALL operator is as follows:
         FROM table_name 
         WHERE column_name operator ALL 
           (SELECT column_name FROM table_name WHERE condition); 
+
+
+REPLACE statement : inset or update data in a table by deleting and replacing existing records
+-checks for the primary or unique key of existing records 
+- adds new data if no matching key is found 
+- deletes and replaces th existing record if a match is found 
+syntax:
+        REPLACE INTO table_name (column1, column2) 
+        VALUES (column1_value, column2_value) ;
+
+        REPLACE INTO table_name 
+        SET column_name = value, column2 = value ;
+
+
+
+Rename A table : 
+        ALTER TABLE table_name RENAME new_table_name ; 
+        
