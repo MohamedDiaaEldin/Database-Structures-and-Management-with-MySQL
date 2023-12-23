@@ -1,0 +1,14 @@
+
+SELECT column_name 
+FROM table_name 
+WHERE expression operator
+(SELECT column_name FROM table_name WHERE condition)    
+
+
+
+Inner query executes first and its results are then passed to the outer parent query 
+
+
+ANY : returns data for any values that meet the specified condition 
+ALL : returns data for all values 
+SOME : return data for one or more matching values 

@@ -38,4 +38,4 @@ syntax:
 
 Rename A table : 
         ALTER TABLE table_name RENAME new_table_name ; 
-        
+        RENAME table table_name TO new_table_name ;

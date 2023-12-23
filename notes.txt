@@ -1,0 +1,3 @@
+I need to revisit 
+    - sub queries - ANY - ALL - SOME 
+    

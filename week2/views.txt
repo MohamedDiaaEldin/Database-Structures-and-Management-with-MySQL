@@ -1,0 +1,13 @@
+Views : 
+    - Create a subset of a table's data 
+    - combine data from multiple tables into one view 
+
+Create View Syntax : 
+
+    CREATE VIEW view_name AS 
+    SELECT table.column_name1, table.column_name2
+    FROM table_name 
+    WHERE condition ;
+
+Delete View Syntax : 
+    DROP VIEW view_name ; 
