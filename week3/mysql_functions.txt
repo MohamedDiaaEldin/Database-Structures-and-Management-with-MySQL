@@ -1,0 +1,88 @@
+MySQl Functions 
+    - Numeric Functions
+    - String Functions 
+    - Date Functions
+    - comparison Functions
+    - control flow Functions
+
+
+- Numeric Functions
+    - Aggregate Functions : SUM, AVG, MAX, MIN, COUNT    
+    - Math Functions : ROUND, MOD 
+        - ROUND Syntax : 
+            SELECT column_name ROUND(column_name, decimal places) 
+            FROM table_name ;
+             
+        - MOD Syntax : 
+            SELECT column_name MOD(column_name, divide by value) 
+            FROM table_name ;
+            
+
+- String Functions : CONCAT, SUBSTR, UCASE, LCASE 
+    CONCAT Syntax : 
+        SELECT CONCAT("string2," " , "string2")
+        FROM table_name ;
+    
+    SUBSTR Syntax : 
+        SELECT SUBSTR("string1", start_index, length)
+        FROM table_name ;
+
+    UCASE Syntax : 
+        SELECT UCASE(column_name)
+        FROM table_name ;
+
+    LCASE Syntax : 
+        SELECT LCASE(column_name)
+        FROM table_name ;
+
+
+Data Functions : CURRENT_DATE, CURRENT_TIME, DATE_FORMAT, DATEDIFF 
+    CURRENT_DATE Syntax :
+        SELECT CURRENT_DATE()
+
+    CURRENT_DATE Syntax :
+        SELECT CURRENT_TIME()
+
+    CURRENT_TIME Syntax :
+        SELECT CURRENT_TIME()
+    
+    DATE_FORMAT Syntax :
+        - DATE_FORMAT('YYY-MM-DD', "format")        
+        SELECT DATE_FORMAT(order_date, "%M") FROM orders ;
+                %Y: Year (four digits)
+                %y: Year (two digits)
+                %m: Month (numeric, 01-12)
+                %d: Day of the month (01-31)
+                %H: Hour (00-23)
+                %h: Hour (01-12)
+                %i: Minutes (00-59)
+                %s: Seconds (00-59)
+                %p: AM or PM (for 12-hour clock format)
+                %W: Weekday name (full)
+                %w: Day of the week (0=Sunday, 1=Monday, ..., 6=Saturday)
+                %M: Month name (full)
+                %b: Month name (short)
+     
+     
+    
+    DATEDIFF Syntax :
+        SELECT DATEDIFF(date1, date2)
+    
+
+
+
+- Comparison Functions : GREATEST, LEAST, ISNULL, 
+    SELECT  column_name,
+    GREATEST(column_name1, column_name2, column_name3) AS highest , 
+    LEAST(column_name1, column_name2, column_name3) AS lowest , 
+    FROM table_name ;
+
+- Control Flow Functions : CASE 
+    SELECT column_name
+    CASE 
+        WHEN condition1 THEN result1 
+        WHEN condition2 THEN result2
+        WHEN condition3 THEN result3
+        ELSE result 
+    END AS alias
+
