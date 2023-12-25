@@ -1,0 +1,22 @@
+Create Stored procedure 
+
+    CREATE PROCEDURE procedure_name()
+    SELECT * 
+    FROM table_name ;    
+    
+    
+Procedure with parameter :
+    CREATE PROCEDURE procedure_name(value INT)
+    SELECT * 
+    FROM table_name 
+    WHERE column_name = value ; 
+
+
+Invoke stored procedure : 
+    CALL procedure_name(); 
+
+Delete stored procedure 
+    DROP PROCEDURE procedure_name ;
+
+
+we Can not alter a procedure , but we can drop and create new one
